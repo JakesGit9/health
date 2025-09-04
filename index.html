@@ -11,11 +11,11 @@
       line-height: 1.7;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #edf2f7, #e0e7ff);
+      background: linear-gradient(135deg, #f9fafb, #e0e7ff);
       color: #222;
     }
     header {
-      background: linear-gradient(135deg, #4a6fa5, #2b4c7e);
+      background: linear-gradient(135deg, #2b4c7e, #4a6fa5);
       color: white;
       padding: 2rem 1rem;
       text-align: center;
@@ -23,20 +23,41 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-weight: 400;
+    }
+    nav {
+      background: #f1f5f9;
+      padding: 0.8rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #d1d5db;
+    }
+    nav a {
+      margin: 0 1rem;
+      font-weight: 600;
+      color: #2b4c7e;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #1d4ed8;
     }
     section {
       max-width: 850px;
       margin: 2rem auto;
       padding: 2rem;
       background: white;
-      border-radius: 12px;
+      border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     section:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
     }
     h2 {
       color: #2b4c7e;
@@ -63,19 +84,25 @@
       color: white;
       font-size: 0.9rem;
     }
-    footer a {
-      color: #cbd5e1;
-    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🌿 Depression Awareness</h1>
+    <h1>Depression Awareness</h1>
     <p>Understanding, Supporting, and Healing Together</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#what">What is it?</a>
+    <a href="#prevalence">Prevalence</a>
+    <a href="#symptoms">Symptoms</a>
+    <a href="#causes">Causes</a>
+    <a href="#treatments">Treatments</a>
+    <a href="#help">Where to Get Help</a>
+  </nav>
+
+  <section id="what">
     <h2>What is it?</h2>
     <p>
       Depression (Major depressive disorder) is a common and serious mental health condition 
@@ -93,7 +120,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="prevalence">
     <h2>Prevalence?</h2>
     <p>
       One of the nations most impacted by the rising prevalence of anxiety and associated 
@@ -110,7 +137,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="symptoms">
     <h2>Signs & Symptoms?</h2>
     <ul>
       <li>Persistent sadness or emptiness</li>
@@ -134,7 +161,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="causes">
     <h2>Risk Factors / Causes?</h2>
     <ul>
       <li><strong>Genetics:</strong> Depression can run through families, creating a predisposition, though not guaranteed.</li>
@@ -143,7 +170,7 @@
     </ul>
   </section>
 
-  <section>
+  <section id="treatments">
     <h2>Treatments / Strategies?</h2>
     <p>
       Depression is treated with a combination of strategies, often involving professional medical 
@@ -156,7 +183,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="help">
     <h2>Where to Go for Help?</h2>
     <p>
       If you or someone you know is struggling with depression, support is available.
@@ -167,15 +194,14 @@
       <li>Seek professional support from counselors, doctors (GPs), and therapists.</li>
       <li>Online resources: 
         <a href="https://www.mindspot.org.au/" target="_blank">MindSpot Clinic</a>, 
-        <a href="https://www.blackdoginstitute.org.au/" target="_blank">Black Dog Institute</a>
+        <a href="https://www.blackdoginstitute.org.au/" target="_blank">Black Dog Institute</a>, 
+        <a href="https://www.beyondblue.org.au/" target="_blank">Beyond Blue</a>
       </li>
     </ul>
   </section>
 
   <footer>
-    <p>💙 You are not alone. Help is always available. | 
-      <a href="https://www.beyondblue.org.au/" target="_blank">Beyond Blue</a>
-    </p>
+    <p>&copy; 2025 Depression Awareness Project</p>
   </footer>
 
 </body>
