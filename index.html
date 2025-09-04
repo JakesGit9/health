@@ -11,48 +11,43 @@
       line-height: 1.7;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #f9fafb, #e0e7ff);
+      background: linear-gradient(135deg, #eef2f7, #e0e7ff);
       color: #222;
     }
     header {
       background: linear-gradient(135deg, #2b4c7e, #4a6fa5);
       color: white;
-      padding: 2rem 1rem;
+      padding: 1.5rem 1rem;
       text-align: center;
       box-shadow: 0 3px 8px rgba(0,0,0,0.2);
     }
     header h1 {
       margin: 0;
-      font-size: 2.3rem;
+      font-size: 2rem;
       font-weight: 700;
     }
-    header p {
-      margin-top: 0.5rem;
-      font-weight: 400;
-    }
     nav {
-      background: #f1f5f9;
-      padding: 0.8rem 1rem;
-      text-align: center;
-      border-bottom: 1px solid #d1d5db;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.8rem;
     }
     nav a {
-      margin: 0 1rem;
-      font-weight: 600;
-      color: #2b4c7e;
+      color: #f1f5f9;
       text-decoration: none;
+      font-weight: 600;
       transition: color 0.2s ease;
     }
     nav a:hover {
-      color: #1d4ed8;
+      color: #cbd5e1;
     }
     section {
-      max-width: 850px;
+      max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
       background: white;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     section:hover {
@@ -78,8 +73,7 @@
     }
     footer {
       text-align: center;
-      padding: 1.5rem;
-      margin-top: 3rem;
+      padding: 1.2rem;
       background: #2b4c7e;
       color: white;
       font-size: 0.9rem;
@@ -90,17 +84,15 @@
 
   <header>
     <h1>Depression Awareness</h1>
-    <p>Understanding, Supporting, and Healing Together</p>
+    <nav>
+      <a href="#what">What is it?</a>
+      <a href="#prevalence">Prevalence</a>
+      <a href="#symptoms">Symptoms</a>
+      <a href="#risk">Risk Factors</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#help">Help</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="#what">What is it?</a>
-    <a href="#prevalence">Prevalence</a>
-    <a href="#symptoms">Symptoms</a>
-    <a href="#causes">Causes</a>
-    <a href="#treatments">Treatments</a>
-    <a href="#help">Where to Get Help</a>
-  </nav>
 
   <section id="what">
     <h2>What is it?</h2>
@@ -161,7 +153,7 @@
     </p>
   </section>
 
-  <section id="causes">
+  <section id="risk">
     <h2>Risk Factors / Causes?</h2>
     <ul>
       <li><strong>Genetics:</strong> Depression can run through families, creating a predisposition, though not guaranteed.</li>
@@ -201,7 +193,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Depression Awareness Project</p>
+    <p>&copy; 2025 Depression Awareness Resource | Educational Use Only</p>
   </footer>
 
 </body>
